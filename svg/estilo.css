@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Google Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #3f3f3f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000000;
+}
+
+p {
+  font-family: 'Google Sans', Arial, sans-serif;
+  max-width: 700px;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  
+}

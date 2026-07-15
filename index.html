@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Restrito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("conteudo/Mnemosyne.webp");
+            background-position: center;
+            background-size:contain;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .login-box {
+            background-color: #1b1b1b;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 200px;
+            border: 1px solid #3d0b0b;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #c7c7c7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        
+        
+        <input type="password" id="senha" placeholder="...">
+        <br>
+        <button onclick="verificarSenha()"></button>
+    </div>
+
+    <script>
+        function verificarSenha() {
+            var senhaDigitada = document.getElementById("senha").value;
+            // Defina sua chave de acesso abaixo
+            var senhaCorreta = "mnemosine"; 
+
+            if (senhaDigitada === senhaCorreta) {
+                // Página para onde o usuário será redirecionado
+                window.location.href = "svg/acesso.html"; 
+            } else {
+                alert("Chave de acesso incorreta!");
+            }
+        }
+    </script>
+
+</body>
+</html>
